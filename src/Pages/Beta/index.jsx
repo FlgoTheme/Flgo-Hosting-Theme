@@ -27,7 +27,7 @@ export default function Beta() {
 
     setIsSubmitted(true);
 
-    const webhookUrl = 'https://discord.com/api/webhooks/1161400631295217684/K3ZgL97Gykna0s4qDqI0XWFGqxXd4L230fF_zIoVJKgL2KzHriy68z2z6G80abNk-mwV';
+    const webhookUrl = '';
 
     const payload = {
       content: `Company Name: ${formData.companyName}\nCompany Owner Name: ${formData.companyOwnerName}\nContact Email: ${formData.contactEmail}`,
