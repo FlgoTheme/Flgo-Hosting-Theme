@@ -1,3 +1,4 @@
+import Footer from '../../assets/components/footer';
 
 export default function NotFound() {
     return (
@@ -10,10 +11,9 @@ export default function NotFound() {
       </div>
 </div>   
 
+<Footer />
 
-<footer className="text-center absolute bottom-1 w-full">
-  <p className="text-[#9CA3AF] text-sm opacity-80 font-medium">Copyright © 2024, Flgo Development</p>
-</footer>
+
         </>
     )
 }

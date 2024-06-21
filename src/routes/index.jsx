@@ -4,6 +4,8 @@ import NotFound from '../Pages/NotFound/index';
 import Beta from "../Pages/Beta/index";
 import Login from "../Pages/Login";
 import Project from "../Pages/project";
+import TestPage from "../Pages/Test/index"
+import Owner from "../Pages/Owner";
 
 const routes = createBrowserRouter([
     {
@@ -25,6 +27,14 @@ const routes = createBrowserRouter([
     {
         path: '/project',
         element: <Project />
+    },
+    {
+        path: '/test',
+        element: <TestPage />
+    },
+    {
+        path: '/owner',
+        element: <Owner />
     }
 ])
 

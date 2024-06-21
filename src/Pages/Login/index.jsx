@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Footer from '../../assets/components/footer';
+
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -37,18 +39,29 @@ export default function Login() {
 
   return (
     <>
-     <div className="w-screen h-1 bg-[#1D4ED8]"></div>
-     <p className="bg-[#3577F0] absolute top-4 left-4 bg-opacity-[13%] w-[105px] h-[25px] border-solid border-[1px] border-[#1D4ED8] rounded-[15px] text-[#1D4ED8] font-bold text-xs items-center flex justify-center">CLOSED BETA</p>
-     
-     
-      <form onSubmit={handleSubmit}>
-        <div className='w-[434px] mx-auto mt-[16%]'>
-          <div className='text-center w-[434px] h-[38px] p-4 bg-[#1C1D2B] bg-opacity-[60%] rounded-md flex gap-[120px] items-center'>
-            <img className='w-[19px] h-[19px]' src="https://cdn.discordapp.com/attachments/1227695797777469471/1246151416263741520/Error.png?ex=666298b2&is=66614732&hm=af683226a00642333a9d63d866e5a77f84496a912fcd7b811293a09f83de976f&" />
+    <div>
+        <div className="w-screen h-1 bg-[#1D4ED8]"></div>
+        <p className="bg-[#3577F0] absolute top-4 left-4 bg-opacity-[13%] w-[105px] h-[25px] border-solid border-[1px] border-[#1D4ED8] rounded-[15px] text-[#1D4ED8] font-bold text-xs items-center flex justify-center">CLOSED BETA</p>
+    
+        <a href='http://localhost:5173/login' target='_blank'>
+        <img 
+           src='https://cdn.discordapp.com/attachments/1227695797777469471/1248264207586295859/lock.png?ex=6674d462&is=667382e2&hm=e64dafbe35bb91daa78f20ef404121aa632506a12bcb1dfec28f8ec831bc9d24&' 
+           class='flex flex-col bg-[#1c1f2d] rounded-[3px] bg-opacity-[45%] p-1 float-right mt-3 mr-3'
+        />
+        </a>
+    </div>
+   
+    <div className='text-center max-w-[1024px] mx-auto text-white flex flex-col mt-[35%] lg:mt-[16%] items-center '>
+   
+
+    <form onSubmit={handleSubmit}>
+        <div className='w-[360px] lg:w-[434px]'>
+          <div className='text-center w-[90%] h-[38px] p-4 bg-[#1C1D2B] bg-opacity-[60%] rounded-md flex items-center mx-auto justify-center gap-2'>
+            <img className='w-[19px] h-[19px]' src="https://cdn.discordapp.com/attachments/1227695797777469471/1246151416263741520/Error.png?ex=66765f32&is=66750db2&hm=8e0a4da77b2ed4b8285c31ee00d601a10e1967f93128ef567d996ce4e4d5bf73&"/>
             <p className='font-medium text-[14px] text-[#94A3B8]'>Admin Login Only</p>
           </div>
 
-          <div className='bg-[#1C1D2B] bg-opacity-[60%] w-[434px] h-[232px] mx-auto p-3 text-center rounded-lg mt-3 '>
+          <div className='bg-[#1C1D2B] bg-opacity-[60%] w-[90%] h-[232px] mx-auto p-3 text-center rounded-lg mt-3 '>
             {error && <div className='text-red-500 text-sm mb-2'>{error}</div>}
             
             <p className='text-[14px] font-medium text-[#94A3B8] text-left ml-3 mt-2'>Email</p>
@@ -73,9 +86,19 @@ export default function Login() {
           </div>
         </div>
       </form>
-      <footer className="text-center absolute bottom-1 w-full">
-        <p className="text-[#9CA3AF] text-sm opacity-80 font-medium">Copyright © 2024, Flgo Development</p>
-      </footer>
+
+
+
+
+        <Footer />
+
+        <div 
+        className="-z-50 absolute inset-0 bg-gradient-to-tr from-[#1D4ED8] opacity-[20%] via-transparent to-transparent">
+        </div>
+
+        
+    </div>
     </>
-  );
+);
 }
+

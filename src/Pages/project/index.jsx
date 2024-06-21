@@ -10,7 +10,7 @@ export default function Project() {
                  </div>   
 
 
-<footer className="text-center absolute bottom-1 w-full">
+<footer className="text-center relative md:absolute bottom-1 w-full">
   <p className="text-[#9CA3AF] text-sm opacity-80 font-medium">Copyright © 2024, Flgo Development</p>
 </footer>
         </>
